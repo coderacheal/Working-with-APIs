@@ -1,12 +1,13 @@
 import requests
 
 
-API_KEY = '3e66a6bcecbb3d442fa28cb96148ddcb'
+MY_API_KEY = '3e66a6bcecbb3d442fa28cb96148ddcb'
 URL = 'https://api.openweathermap.org/data/2.5/weather'
 
 
+print("Hi, and welcome to Racheal's Weather App ;)")
 city = input("Enter city name: ")
-request_url = f'{URL}?appid={API_KEY}&q={city}&units=metric'
+request_url = f'{URL}?appid={MY_API_KEY}&q={city}&units=metric'
 
 response = requests.get(request_url)
 if response.status_code == 200:

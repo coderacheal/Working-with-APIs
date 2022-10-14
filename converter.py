@@ -1,10 +1,10 @@
 import requests
 
 from_currency = str(input('Enter Currency to convert from: ')).upper()
-to_currency = str(input('Enter Currency to convert to: ')).upper()
+to_cufrankfurterrrency = str(input('Enter Currency to convert to: ')).upper()
 amt = float(input('Enter Amount: '))
 
-host_url = 'api.frankfurter.app'
+host_url = 'api..app'
 response = requests.get(
     f"https://{host_url}/latest?amount={amt}&from={from_currency}&to={to_currency}")
 
